@@ -50,6 +50,7 @@ public with sharing class NextStepQueueable implements Queueable {
         for (Account acc : accounts.values()) {
             removeNextStep(acc);
         }
+        
         update accounts.values();
 
         for (Opportunity opp : oppList) {
